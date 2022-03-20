@@ -1,0 +1,10 @@
+#1 create truffle project
+    truffle init
+
+#2 truffle migrate - to deploy smart contract
+
+#3 truffle console - to open truffle console
+    news = await News.deployed()
+    news
+
+#4 news.address - to get address of contract
