@@ -1,10 +1,15 @@
 #1 create truffle project
     truffle init
+# truffle compile - to compile the project
 
-#2 truffle migrate - to deploy smart contract
+#2 truffle migrate - to deploy smart contract // truffle migrate --reset for new copy
 
 #3 truffle console - to open truffle console
     news = await News.deployed()
-    news
+    create_news = await news.createNews("IWP Project", "Have to create IWP DA", "prasoon", "20-March-2022")
+    create_news
+    getNews = news.newsInfos(1)
 
 #4 news.address - to get address of contract
+
+#5 .exit - to exit from truffle console
