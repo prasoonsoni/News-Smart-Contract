@@ -1,5 +1,5 @@
 const News = artifacts.require("./News.sol");
 
-module.exports = function(deployer) {
+module.exports = (deployer) => {
   deployer.deploy(News);
 };
