@@ -10,11 +10,12 @@ contract News {
         string description;
         string publisher;
         string date_published;
-        uint block_timestamp;
-        uint block_number;
+        uint256 block_timestamp;
+        uint256 block_number;
         bytes block_data;
     }
     NewsInfo[] newsInfos;
+    
     mapping(uint256 => NewsInfo) public getNewsByID;
 
     function createNews(
