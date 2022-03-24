@@ -1,8 +1,11 @@
-pragma solidity ^0.5.0;
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.4.22 <0.9.0;
 pragma experimental ABIEncoderV2;
 
 contract News {
+    
     uint256 public newsCount = 0;
+
     struct NewsInfo {
         uint256 id;
         address uploader_address;
@@ -15,7 +18,7 @@ contract News {
         bytes block_data;
     }
     NewsInfo[] newsInfos;
-    
+
     mapping(uint256 => NewsInfo) public getNewsByID;
 
     function createNews(
